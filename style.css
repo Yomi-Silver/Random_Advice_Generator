@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-bg {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    width: 25%;
+    height: 35%;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.advice {
+    color: hsl(150, 100%, 66%);
+    font-size: smaller;
+    /* margin: 20px 30px; */
+    padding: 20px 30px;
+}
+
+.quote {
+    color: hsl(193, 38%, 86%);
+}
+
+.quote h4 {
+    padding: 0 20px;
+    border: 20px;
+
+}
