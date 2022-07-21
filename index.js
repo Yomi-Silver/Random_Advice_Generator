@@ -1,14 +1,21 @@
 const quote = document.getElementById("quote");
-const advice = document.getElementById("advice");
+const advice = document.getElementById("adviceId");
+const next = document.getElementById("next");
 
 const getRadomAdviceData = () => {
   fetch("https://api.adviceslip.com/advice")
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      advice.innerHTML = "Quote no. " + data.slip.id + " : ";
+      quote.innerHTML = data.slip.advice;
+    });
 };
-advice.innerHTML = getRadomAdviceData()
+// make page reload when button is clicked
+next.addEventListener("click", getNext);
 
+function getNext() {
+  console.log("Next");
+  // window.location.reload();
+  getRadomAdviceData();
+}
 
-
-
-// advice.innerHTML = getRadomAdviceData;

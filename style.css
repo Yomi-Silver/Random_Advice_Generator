@@ -30,7 +30,7 @@
     padding: 20px 30px;
 }
 
-.quote {
+.quoted {
     color: hsl(193, 38%, 86%);
 }
 
@@ -38,4 +38,16 @@
     padding: 0 20px;
     border: 20px;
 
+}
+button {
+    margin: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    border: 20px;
+    border-radius: 10px;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
 }
